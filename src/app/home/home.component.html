@@ -7,10 +7,10 @@
   <div id="formContent">
     <!-- Icon -->
     <div class="fadeIn first">
-        <input type="image" src="{{creatureAsleep}}" id="icon" (click)="this.SwapImage()" />
+        <input type="image" src="{{creatureAsleep}}" id="icon" (click)="this.WakeUpLittleGuy()" />
     </div>
-    <!-- <div id="formFooter">
-       <a class="underlineHover" href="#">oh hi!</a> 
-     </div>  -->
+    <div id="formFooter" *ngIf="buttonClicked">
+       <p class="underlineHover">oh hi!</p> 
+     </div> 
   </div>
 </div>
