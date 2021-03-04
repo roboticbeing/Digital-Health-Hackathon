@@ -39,6 +39,7 @@ html {
     width: 100%;
     min-height: 100%;
     padding: 20px;
+    background-image: url(../../assets/login-bg.png);
   }
   
   #formContent {
@@ -82,7 +83,7 @@ html {
   /* FORM TYPOGRAPHY*/
   
   input[type=button], input[type=submit], input[type=reset]  {
-    background-color: #56baed;
+    background-color: #00749b;
     border: none;
     color: white;
     padding: 15px 80px;
@@ -104,7 +105,7 @@ html {
   }
   
   input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-    background-color: #39ace7;
+    background-color: #fab272;
   }
   
   input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -115,7 +116,7 @@ html {
     transform: scale(0.95);
   }
   
-  input[type=text] {
+  input[type=text], input[type=password] {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;

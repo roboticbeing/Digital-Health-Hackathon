@@ -9,7 +9,16 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  creatureAsleep: string = "../../assets/sleepy.png";
+  creatureAwake: string = "../../assets/awake.png";
+  buttonClicked: boolean = false;
+
   ngOnInit(): void {
   }
+
+  public WakeUpLittleGuy(){
+    this.creatureAsleep = this.creatureAwake;
+    this.buttonClicked = true;
+}
 
 }
