@@ -11,12 +11,14 @@ export class HomeComponent implements OnInit {
 
   creatureAsleep: string = "../../assets/sleepy.png";
   creatureAwake: string = "../../assets/awake.png";
+  buttonClicked: boolean = false;
 
   ngOnInit(): void {
   }
 
-  public SwapImage(){
+  public WakeUpLittleGuy(){
     this.creatureAsleep = this.creatureAwake;
+    this.buttonClicked = true;
 }
 
 }
