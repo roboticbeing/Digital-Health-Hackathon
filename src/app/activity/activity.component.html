@@ -1,1 +1,4 @@
-<p>activity works!</p>
+<button (click)="toggleSuggestion()">Suggestion</button>
+<div *ngIf="buttonClicked">
+    <p>{{suggestions[currentSuggestion]}}</p>
+</div>

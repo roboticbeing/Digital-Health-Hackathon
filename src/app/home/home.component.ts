@@ -22,10 +22,7 @@ export class HomeComponent implements OnInit {
 
   public async WakeUpLittleGuy(){
     this.creatureAsleep = this.creatureAwake;
-    await this.delay(300);
+    await this.delay(200);
     this.buttonClicked = true;
 }
-
-
-
 }
