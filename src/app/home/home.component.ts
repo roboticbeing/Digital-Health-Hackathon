@@ -16,9 +16,16 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public WakeUpLittleGuy(){
+  public delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+  }
+
+  public async WakeUpLittleGuy(){
     this.creatureAsleep = this.creatureAwake;
+    await this.delay(300);
     this.buttonClicked = true;
 }
+
+
 
 }

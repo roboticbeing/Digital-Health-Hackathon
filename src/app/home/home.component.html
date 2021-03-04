@@ -6,10 +6,13 @@
 <div class="wrapper ">
   <div id="formContent">
     <!-- Icon -->
+    <!-- <div id="formHeader">
+         <p class="underlineHover">oh hi!</p>  -->
+      <!-- </div>   -->
     <div class="fadeIn first">
         <input type="image" src="{{creatureAsleep}}" id="icon" (click)="this.WakeUpLittleGuy()" />
     </div>
-    <div id="formFooter" *ngIf="buttonClicked">
+    <div id="formFooter" class="fadeIn second" *ngIf="buttonClicked">
        <p class="underlineHover">oh hi!</p> 
      </div> 
   </div>
