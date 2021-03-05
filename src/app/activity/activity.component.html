@@ -1,4 +1,45 @@
-<button (click)="toggleSuggestion()">Suggestion</button>
-<div *ngIf="buttonClicked">
-    <p>{{suggestions[currentSuggestion]}}</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+
+<div class="wrapper">
+    <div class="card-deck">
+        <div class="col">
+            <div class="card text-white text-center bg-success mb-3" style="width: 22rem; height:11rem">
+                <div class="card-body">
+                <h5 class="card-title">Nutrition</h5>
+                <p class="card-text">Make your favourite dish from scratch!</p>
+                <a href="#" class="btn btn-light">Complete!</a>
+                </div>
+            </div>
+        </div>  
+        <div class="col">
+            <div class="card text-dark text-center bg-warning mb-3" style="width: 22rem; height:11rem">
+                <div class="card-body">
+                <h5 class="card-title">Meditation</h5>
+                <p class="card-text">Partake in 20 minutes of meditation!</p>
+                <a href="#" class="btn btn-light">Complete!</a>
+                </div>
+            </div>
+        </div> 
+        <div class="col">
+            <div class="card text-white text-center bg-primary mb-3" style="width: 22rem; height:11rem">
+                <div class="card-body">
+                <h5 class="card-title">Fitness</h5>
+                <p class="card-text">Partake in 15 minutes of physical exercise!</p>
+                <a href="#" class="btn btn-light">Complete!</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+      <button (click)="toggleSuggestion()">Suggestion</button>
+
+    <div *ngIf="buttonClicked">
+        <p>{{suggestions[currentSuggestion]}}</p>
+    </div>
 </div>
+
