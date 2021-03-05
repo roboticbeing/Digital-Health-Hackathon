@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ActivityComponent } from './activity/activity.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ActivityComponent } from './activity/activity.component';
     HomeComponent,
     ProfileComponent,
     SettingsComponent,
-    ActivityComponent
+    ActivityComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
